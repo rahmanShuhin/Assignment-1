@@ -1,0 +1,8 @@
+body {
+    background-color: #f7fff7 !important;
+}
+.button__basic {
+    @include button-basic;
+    background-color: $secondary;
+    color: white;
+}

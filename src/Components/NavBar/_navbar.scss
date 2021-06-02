@@ -1,0 +1,30 @@
+.navBar {
+    color: reed;
+    background-color: $primary;
+    min-width: 100%;
+    .brand {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    > nav {
+        background-color: $primary;
+        padding: 15px 10px;
+        max-width: 1400px;
+        margin: 0px auto;
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: $secondary !important;
+            }
+        }
+    }
+    &__links {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        .active {
+            color: $secondary !important;
+        }
+    }
+}

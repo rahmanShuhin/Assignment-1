@@ -1,0 +1,17 @@
+.home {
+    @include hz-cen-mx-1400;
+
+    &__posts {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        margin-bottom: 20px;
+    }
+    > div:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+        > button {
+            background-color: $primary !important;
+        }
+    }
+}
