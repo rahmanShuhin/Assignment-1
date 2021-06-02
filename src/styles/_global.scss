@@ -6,3 +6,32 @@ body {
     background-color: $secondary;
     color: white;
 }
+table {
+    width: 100%;
+    min-width: fit-content;
+    overflow: auto;
+    background-color: white;
+    tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        border: 1px solid lightgray;
+        padding: 10px 20px;
+        &:first-of-type {
+            background-color: $secondary !important;
+            color: white;
+            th {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        &:last-of-type {
+            grid-template-columns: 3fr 1fr 1fr;
+            background-color: $primary;
+            margin-top: 20px;
+            color: white;
+        }
+    }
+}

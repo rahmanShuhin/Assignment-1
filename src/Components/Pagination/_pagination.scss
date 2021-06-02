@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    div {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+    button {
+        background: none;
+        color: white;
+        border: none;
+    }
+    a {
+        text-decoration: none;
+        flex: 1;
+        padding: 5px 20px;
+        border: 1px solid lightgray;
+        transition: all 0.2s;
+        text-align: center;
+        &:hover {
+            background-color: $secondary;
+            color: white;
+        }
+    }
+    .active {
+        background-color: $secondary;
+        color: white;
+    }
+}

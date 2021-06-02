@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home">
             <div className="home__posts">
                 {data.slice(0, load).map((x) => (
-                    <Card x={x}></Card>
+                    <Card key={x.id} x={x}></Card>
                 ))}
             </div>
 

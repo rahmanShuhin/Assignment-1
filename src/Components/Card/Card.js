@@ -6,7 +6,8 @@ const Card = (props) => {
     return (
         <div className="myCard">
             <h2>{title}</h2>
-            <p>{body}</p>
+            <p>{`${body.substring(0, 150)} ${body.length > 150 && "...."}`}</p>
+
             <button
                 className="button__basic"
                 onClick={() => history.push(`/posts/${id}`)}
